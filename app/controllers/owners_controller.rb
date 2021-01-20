@@ -4,7 +4,6 @@ class OwnersController < ApplicationController
   get '/owners' do
     @owners = Owner.all
     erb :'/owners/index'
-    binding.pry
   end
 
   get '/owners/new' do
